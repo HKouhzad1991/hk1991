@@ -22,6 +22,14 @@ body {
 }
 .accardion::after {
   content: "\00276F";
+  transform: rotate(90deg);
+  color: #777;
+  font-weight: bold;
+  margin-left: 5px;
+  transition: all 0.5s;
+}
+.active::after {
+  content: "\00276F";
   transform: rotate(270deg);
 }
 
