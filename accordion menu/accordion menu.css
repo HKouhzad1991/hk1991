@@ -17,14 +17,15 @@ body {
   font-weight: bold;
 }
 
-.active.accardion: :hover {
+.active.accordion: :hover {
   background-color: #ccc;
 }
-.accardion::after {
+.accordion::after {
   content: "\00276F";
   transform: rotate(90deg);
   color: #777;
   font-weight: bold;
+  float: right;
   margin-left: 5px;
   transition: all 0.5s;
 }
