@@ -447,3 +447,9 @@
 
 let input = document.querySelector("input");
 let p = document.querySelector("p");
+input.addEventListener("keydown", () => {
+  p.innerHTML += "keydown";
+});
+input.addEventListener("keyup", () => {
+  p.innerHTML += "keyup";
+});
