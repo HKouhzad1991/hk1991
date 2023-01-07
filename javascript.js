@@ -407,7 +407,43 @@
 //   console.log("right click");
 //   document.body.style.backgroundColor = "cyan";
 // });
-
-
 // counter project:
 
+// mouseenter:
+// mouseleave:
+// mouseover / mouseout:
+
+// const container = document.querySelector(".container");
+// const child = document.querySelector(".child");
+
+// container.addEventListener("mouseenter", function () {
+//   console.log("mouseenter : container");
+// })
+
+// container.addEventListener("mouseleave", function () {
+//   console.log("mouseleave:container");
+// })
+// container.addEventListener("mouseenter", function () {
+//   console.log("mouseenter : child");
+// })
+
+// const btn = document.querySelector('button');
+// btn.addEventListener('click', eventHandler);
+// function eventHandler(event) {
+
+// }
+
+// let div = document.querySelector(".box");
+// div.addEventListener("click", handler);
+
+// function handler(event){
+//   let message = "Event Type : ${event.type}</br>";
+
+//   message += `Target:${event.target.nodeName}</br>` ;
+
+//   message += 'clientX: ${event.clientX}';
+//   div.innerHTML = message;
+// }
+
+let input = document.querySelector("input");
+let p = document.querySelector("p");
