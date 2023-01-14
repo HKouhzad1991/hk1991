@@ -445,11 +445,57 @@
 //   div.innerHTML = message;
 // }
 
-let input = document.querySelector("input");
-let p = document.querySelector("p");
-input.addEventListener("keydown", () => {
-  p.innerHTML += "keydown";
-});
-input.addEventListener("keyup", () => {
-  p.innerHTML += "keyup";
-});
+// let input = document.querySelector("input");
+// let p = document.querySelector("p");
+
+// input.addEventListener("keydown", () => {
+//   p.innerHTML += "keydown";
+// });
+// input.addEventListener("keyup", () => {
+//   p.innerHTML += "keyup";
+// });
+
+// input.addEventListener("keypress", () => {
+//   p.innerHTML += "keypress";
+// });
+// let input = document.querySelector("input");
+// let p = document.querySelector("p");
+
+// input.addEventListener("keydown", (event) => {
+//   if (event.code == "KeyA" && event.ctrlKey) {
+//     document.body.style.backgroundColor = " red";
+// }
+// p.innerHTML += `event type : ${event.type} </br>`;
+// p.innerHTML += `target: ${event.target.nodeName} </br>`;
+// p.innerHTML += `event type : ${event.keyCode}</br>`;
+// p.innerHTML += `event type : ${event.charCode}</br>`;
+// p.innerHTML += ` key : ${event.key} </br>`;
+// p.innerHTML += ` ctrl : ${event.ctrlKey}</br>`;
+// p.innerHTML += ` Alt : ${event.altKey}</br>`;
+// p.innerHTML += ` Ctrl : ${event.ctrlKey}</br>`;
+// p.innerHTML += ` Shift : ${event.shiftKey}</br>`;
+// p.innerHTML += ` Repeat : ${event.repeat}</br>`;
+// });
+
+// const div = document.querySelector("div");
+// const p = document.querySelector("p");
+// const body = document.body;
+
+// div.addEventListener("touchstart", (event) => {
+//   p.innerHTML = "touch start";
+//   body.style.backgroundColor = "cyan";
+//   p.innerHTML = event.touches.length;
+// });
+
+// div.addEventListener("touchend", () => {
+//   p.innerHTML = "touch end";
+//   body.style.backgroundColor = "yellow";
+// });
+// div.addEventListener("touchmove", () => {
+//   p.innerHTML = "touch move";
+//   body.style.backgroundColor = "orange";
+// });
+
+let container = document.querySelector(".container");
+let container = document.querySelector(".child");
+
