@@ -18,10 +18,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url();
+  background: url(images/pngwing.com\ \(4\).png);
   background-size: cover;
   border-radius: 50%;
-  background-color: rgb(31, 119, 90);
-  box-shadow: inset 10px 10px 15px #202020;
+  background-color: rgb(179, 140, 3);
+  box-shadow: inset 10px 10px 55px  #111001;
   inset -10px -10px 15px #202020;
+}
+
+.clock::before{
+    content:'' ;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #272727;
+    
 }
