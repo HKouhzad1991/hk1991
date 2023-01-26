@@ -227,7 +227,7 @@
 
 // browser EventS
 
-let p = document.querySelector("p");
+// let p = document.querySelector("p");
 
 // window.addEventListener("load", () => {
 //   p.innerHTML += "load event <br>";
@@ -237,10 +237,36 @@ let p = document.querySelector("p");
 //   p.innerHTML += "DomContentLoaded <br>";
 // });
 
-window.addEventListener("focus", () => {
-  p.innerHTML += "focus event <br>";
-});
+// window.addEventListener("focus", () => {
+//   p.innerHTML += "focus event <br>";
+// });
 
-window.addEventListener("blur", () => {
-  p.innerHTML += "blur event <br>";
-});
+// window.addEventListener("blur", () => {
+//   p.innerHTML += "blur event <br>";
+// });
+
+// window.addEventListener("beforeunload", (event) => {
+//   event.preventDefault();
+//   event.returnValue = "";
+// });
+
+// window.addEventListener("resize", () => {
+//   p.innerHTML += "resize event <br>";
+// });
+
+// Date(year , month , day , hours , minutes , seconds . milliseconds)
+// let myDate = new Date(2018 , 11 , 10 , 3 ,25 ,50);
+// console.log(myDate);
+
+let myDate = new Date("2023-01-26 ");
+
+console.log(myDate.getFullYear());
+console.log(myDate.getDate());
+console.log(myDate.getMonth());
+console.log(myDate.getMinutes());
+console.log(myDate.getTime());
+console.log(myDate.getDay());
+
+myDate.setFullYear(2019);
+myDate.setDate(2);
+console.log(myDate);
