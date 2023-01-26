@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #282828;
+}
+.clock {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url();
+  background-size: cover;
+  border-radius: 50%;
+  background-color: rgb(31, 119, 90);
+  box-shadow: inset 10px 10px 15px #202020;
+  inset -10px -10px 15px #202020;
+}
