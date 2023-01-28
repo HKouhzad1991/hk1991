@@ -29,3 +29,24 @@
 // console.log(date1.from(date2));
 
 // diff() in moment.js library
+
+// let date1 = moment("2022-01-01");
+// let date2 = moment("2023-01-01");
+// console.log(date2.diff(date1, "hours"));
+
+// console.log(Date.parse("1970-01-04"));
+// console.log(new Date());
+
+// console.log(add(15, "minutes"));
+
+// let d = new persianDate();
+// console.log(d.format());
+
+// let date = new Date();
+// let pDate1 = new persianDate();
+
+// console.log(date);
+// console.log(pDate1.format(''));
+
+let pDate = new persianDate();
+console.log(pDate.toLocale('en').format("YYYY/MM/DD"));
