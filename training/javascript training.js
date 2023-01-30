@@ -48,5 +48,72 @@
 // console.log(date);
 // console.log(pDate1.format(''));
 
-let pDate = new persianDate();
-console.log(pDate.toLocale('en').format("YYYY/MM/DD"));
+// let pDate = new persianDate(new Date("1991-8-2"));
+// console.log(pDate.toLocale("en").format("YYYY/MM/DD"));
+
+// nextElementSibling;
+
+// let element = document.querySelector("#box1");
+// element.nextElementSibling.nextElementSibling;
+
+// let element = document.querySelector("#box3");
+
+// element.previousElementSibling;
+
+// firstElementChild;
+// lastElementChild;
+// parentNode;
+// parentElement;
+
+// let box1 = document.querySelector(".box1");
+// console.log(box1.parentElement);
+
+// creating DOM nodes
+//  روش اول
+// let p1 = document.createElement("p");
+// let text = document.createTextNode("next1code.ir");
+
+// p1.appendChild(text);
+
+// let container = document.querySelector("#container");
+// container.appendChild(p1);
+
+// let p2 = document.createElement("p");
+// let text2 = document.createTextNode("Hossein kouhzad best programmer ");
+// p2.appendChild(text2);
+// container.appendChild(p2);
+
+// روش دوم
+// let p3 = document.createElement("p");
+// p3.textContent = "hossein kouhzad front end developer";
+
+// let container = document.querySelector("#container");
+// container.appendChild(p3);
+
+// let p4 = document.createElement("p");
+// p4.innerHTML = "i will be the greatest progrtamer in history";
+// container.appendChild(p4);
+
+// funcion insert in DOM
+
+// let container = document.querySelector("#container");
+
+// function createNode(myTag, myText) {
+//   let element = document.createElement(myTag);
+//   element.texContent = myText;
+//   return element;
+// }
+// let ul = createNode("ul", " ");
+// let li1 = createNode("li", "item 1");
+// let li2 = createNode("li", "item 2");
+// let li3 = createNode("li", "item 3");
+// let li4 = createNode("li", "item 4");
+// ul.appendChild(li1);
+// ul.appendChild(li2);
+// ul.appendChild(li3);
+// ul.appendChild(li4);
+
+// container.appendChild(ul);
+
+// DOM manipulation
+ 
