@@ -16,6 +16,96 @@ body {
   background-color: rgb(121, 207, 238);
 }
 .container .header {
-  background-color: orangered;
-  padding: ;
+  background-color: rgb(241, 86, 122);
+  padding: 15px 40px 30px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.container .header h2 {
+  margin: 10px;
+  font-size: 35px;
+}
+
+input {
+  width: 75%;
+  float: left;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.addBtn {
+  width: 25%;
+  float: left;
+  border: none;
+  padding: 10px;
+  background: rgb(156, 25, 60);
+  color: rgb(248, 243, 243);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: rgb(195, 189, 29);
+}
+
+.container .header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container .taskList {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.taskList {
+  list-style-type: none;
+}
+
+.taskList li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background-color: rgb(226, 169, 248);
+  font-size: 18px;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.taskList li:hover {
+  background: rgb(130, 167, 234);
+}
+
+.closeBtn {
+  display: none;
+  position: absolute;
+  right: 15px;
+}
+ul li:hover .closeBtn {
+  display: inline-block;
+}
+ul li .closeBtn i:hover {
+  color: crimson;
+}
+.taskList li.done {
+  background-color: rgb(91, 183, 149);
+  color: rgb(246, 245, 245);
+  text-decoration: line-through;
+}
+
+.taskList li.done::before {
+  content: "";
+  width: 5px;
+  height: 16px;
+  position: absolute;
+  left: 21px;
+  top: 11px;
+  border-color: rgb(251, 251, 251);
+  border-width: 0px 2px 2px 0px;
+  border-style: solid;
+  transform: rotate(45deg);
 }
