@@ -12,27 +12,53 @@
 //   }
 //  xhr.send();
 // })
+// const button = document.getElementById("button");
+
+// button.addEventListener("click", loadCustomer);
+
+// function loadCustomer() {
+//   let xhr = new XMLHttpRequest();
+//   xhr.open("get", "../customer.json", true);
+//   xhr.onload = function () {
+//     if (this.status === 200) {
+//       let customer = JSON.parse(this.responseText);
+//       let output = `
+//         <ul>
+//         <li>ID : ${customer.id}</li>
+//         <li>firstName : ${customer.firstName}</li>
+//         <li>lastName : ${customer.lastName}</li>
+//         <li>phone : ${customer.phone}</li>
+//         <li>age : ${customer.age}</li>
+//         <li>gender : ${customer.gender}</li>
+//         </ul>
+//       `;
+//       document.getElementById("customer").innerHTML = output;
+//     }
+//   };
+//   xhr.send();
+// }
+
 const button = document.getElementById("button");
 
-button.addEventListener("click", loadCustomer);
+button.addEventListener("click", loadPost);
 
-function loadCustomer() {
+function loadPost() {
   let xhr = new XMLHttpRequest();
-  xhr.open("get", "../customer.json", true);
+  xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
   xhr.onload = function () {
     if (this.status === 200) {
-      let customer = JSON.parse(this.responseText);
-      let output = ` 
-        <ul>
-        <li>ID : ${customer.id}</li>
-        <li>firstName : ${customer.firstName}</li>
-        <li>lastName : ${customer.lastName}</li>
-        <li>phone : ${customer.phone}</li>
-        <li>age : ${customer.age}</li>
-        <li>gender : ${customer.gender}</li>
-        </ul>
+      let post = JSON.parse(this.responseText);
+      let output = `
+      <p class ='post_id'> Post Id : ${post.id} </p>
+      <h2 class ='post_title'>
+      ${post.title}
+      </h2>
+      <p class='post_body'>
+      ${post.body}
+      </p>
+
       `;
-      document.getElementById("customer").innerHTML = output;
+      document.getElementById("post").innerHTML = output;
     }
   };
   xhr.send();
