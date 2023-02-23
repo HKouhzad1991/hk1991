@@ -74,5 +74,50 @@
 
 // function myfunc() {}
 
+// callback hell
 
-// callback hell 
+const xhr1 = new XMLHttpRequest();
+xhr1.open("GET", "https://jsonplaceholder.typicode.com/posts/1");
+
+xhr1.onload = function () {
+  if (this.status === 200) {
+    console.log(JSON.parse(xhr1.responseText).id);
+  }
+  const xhr2 = new XMLHttpRequest();
+  xhr2.open("GET", "https://jsonplaceholder.typicode.com/posts/2");
+
+  xhr2.onload = function () {
+    if (this.status === 200) {
+      console.log(JSON.parse(xhr2.responseText).id);
+    }
+    const xhr3 = new XMLHttpRequest();
+    xhr3.open("GET", "https://jsonplaceholder.typicode.com/posts/3");
+
+    xhr3.onload = function () {
+      if (this.status === 200) {
+        console.log(JSON.parse(xhr3.responseText).id);
+      }
+      const xhr4 = new XMLHttpRequest();
+      xhr4.open("GET", "https://jsonplaceholder.typicode.com/posts/4");
+
+      xhr4.onload = function () {
+        if (this.status === 200) {
+          console.log(JSON.parse(xhr4.responseText).id);
+        }
+        const xhr5 = new XMLHttpRequest();
+        xhr5.open("GET", "https://jsonplaceholder.typicode.com/posts/5");
+
+        xhr5.onload = function () {
+          if (this.status === 200) {
+            console.log(JSON.parse(xhr5.responseText).id);
+          }
+        };
+        xhr5.send();
+      };
+      xhr4.send();
+    };
+    xhr3.send();
+  };
+  xhr2.send();
+};
+xhr1.send();
