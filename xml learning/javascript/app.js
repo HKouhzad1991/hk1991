@@ -38,28 +38,41 @@
 //   xhr.send();
 // }
 
-const button = document.getElementById("button");
+// const button = document.getElementById("button");
+// const postNum = document.getElementById("postNumber");
 
-button.addEventListener("click", loadPost);
+// button.addEventListener("click", loadPost);
 
-function loadPost() {
-  let xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
-  xhr.onload = function () {
-    if (this.status === 200) {
-      let post = JSON.parse(this.responseText);
-      let output = `
-      <p class ='post_id'> Post Id : ${post.id} </p>
-      <h2 class ='post_title'>
-      ${post.title}
-      </h2>
-      <p class='post_body'>
-      ${post.body}
-      </p>
+// function loadPost() {
+//   let xhr = new XMLHttpRequest();
+//   let num = Number(postNum.value);
+//   xhr.open("GET", `https://jsonplaceholder.typicode.com/posts/${num}`, true);
+//   xhr.onload = function () {
+//     if (this.status === 200) {
+//       let post = JSON.parse(this.responseText);
+//       let output = `
+//       <p class ='post_id'> Post Id : ${post.id} </p>
+//       <h2 class ='post_title'>
+//       ${post.title}
+//       </h2>
+//       <p class='post_body'>
+//       ${post.body}
+//       </p>
 
-      `;
-      document.getElementById("post").innerHTML = output;
-    }
-  };
-  xhr.send();
-}
+//       `;
+//       document.getElementById("post").innerHTML = output;
+//     }
+//   };
+//   xhr.send();
+// }
+
+// const button = document.querySelector("button");
+// button.addEventListener("click", eventHandler);
+// function eventHandler() {}
+
+// setTimeout(myfunc, 2000);
+
+// function myfunc() {}
+
+
+// callback hell 
