@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Arabic", Tahoma;
+}
+
+body {
+  background: rgb(147, 171, 179);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+    width: 400px;
+    background: rgb(193, 150, 150);
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+.container :where(textarea , button){
+    outline: 0;
+    border: 0;
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.container textarea{
+    border:1px solid rgb(87, 86, 86)
+}
+.container button{
+    background: rgba(51, 49, 49, 0.421);
+    color: rgb(255, 255, 255);
+}
